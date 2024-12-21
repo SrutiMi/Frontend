@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medilife Language Selection</title>
+  <link rel="stylesheet" href="lang.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;1,300..800&display=swap"
+    rel="stylesheet">
+  <script src="language.js" defer></script>
+</head>
+
+<body>
+  <video id="background-video" autoplay muted loop>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <header>
+    <div class="header-logo">
+      <h2>MEDIHELP</h2>
+    </div>
+  </header>
+
+  <div class="kiosk">
+    <div class="main-content">
+      <div class="menu-header">
+        <h1>Select Language</h1>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item" onclick="selectLanguage(this)">English (English)</div>
+        <div class="menu-item" onclick="selectLanguage(this)">हिंदी (Hindi)</div>
+        <div class="menu-item" onclick="selectLanguage(this)">বাংলা (Bengali)</div>
+        <div class="menu-item" onclick="selectLanguage(this)">ଓଡ଼ିଆ (Odia)</div>
+        <div class="menu-item" onclick="selectLanguage(this)">தமிழ் (Tamil)</div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

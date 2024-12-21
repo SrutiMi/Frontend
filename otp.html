@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Verification</title>
+  <link rel="stylesheet" href="otp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <video id="background-video" autoplay muted loop>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <header>
+    <div class="header-logo">
+      <h2>MEDIHELP</h2>
+    </div>
+  </header>
+
+  <div class="otp-container">
+    <h1 id="otp-title">Enter your verification code</h1>
+    <p id="otp-description">We just sent you a verification code to the registered mobile number.</p>
+    <div class="otp-input">
+      <input type="text" id="otp1" maxlength="1">
+      <input type="text" id="otp2" maxlength="1">
+      <input type="text" id="otp3" maxlength="1">
+      <input type="text" id="otp4" maxlength="1">
+    </div>
+    <button id="verify-btn">VERIFY</button>
+    <button id="home-btn">Home</button>
+    <p id="error-message" style="color: red; display: none;">Incorrect OTP. Please try again.</p>
+  </div>
+
+  <script src="otp.js"></script>
+</body>
+
+</html>

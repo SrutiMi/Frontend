@@ -1,0 +1,137 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  /* Important to prevent scrollbars */
+  letter-spacing: 0.025rem;
+  /* Reduced letter spacing */
+  background-color: #f0f0f0;
+  /* Fallback background color */
+}
+
+/* Background Video */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(5px);
+  /* Apply blur to the video */
+  -webkit-filter: blur(5px);
+  /* For Safari */
+}
+
+/* Overlay to improve text readability over the blurred video */
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Adjust opacity as needed */
+  z-index: 0;
+  /* Placed above the video but below other content */
+}
+
+/* Header Section */
+header {
+  width: 100%;
+  padding: 15px;
+  background: rgba(9, 32, 63, 0.7);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.header-logo h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  /* Reduced letter spacing */
+  margin: 0;
+}
+
+/* Kiosk Container */
+.kiosk {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Menu Header */
+.menu-header h1 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #172635;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Items */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: stretch;
+}
+
+.menu-item {
+  background: rgba(249, 250, 251, 0.9);
+  border: 1px solid #dfe4ea;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #15181b;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.menu-item:active {
+  transform: scale(0.99);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .menu-header h1 {
+    font-size: 1.7em;
+  }
+
+  .menu-item {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  .header-logo h2 {
+    font-size: 1.6em;
+  }
+}
