@@ -33,7 +33,25 @@ if (selectedLanguage) {
       } else if (key === "submit") {
         element.value = "জমা দিন";
       }
-    }
-    // Add other language translations similarly
+    } else if (selectedLanguage === "Odia") {
+      // Add Bengali translations here
+      if (key === "patient-name") {
+        element.textContent = "ରୋଗୀ-ନାମ";
+      } else if (key === "abha-id") {
+        element.textContent = "ABHA ID:";
+      } else if (key === "submit") {
+        element.value = "ଦାଖଲ କରନ୍ତୁ";
+      }
+    } else if (selectedLanguage === "Tamil") {
+      // Add Bengali translations here
+      if (key === "patient-name") {
+        element.textContent = "நோயாளி-பெயர்";
+      } else if (key === "abha-id") {
+        element.textContent = "ABHA ID:";
+      } else if (key === "submit") {
+        element.value = "சமர்ப்பிக்கவும்";
+      }
+    } 
+    
   });
 }
