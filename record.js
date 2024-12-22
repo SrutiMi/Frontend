@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const symptomButtons = document.querySelectorAll('.symptomButton');
+
+  symptomButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('selected'); // Toggle the 'selected' class
+    });
+  });
+});
 // Retrieve the selected language from localStorage
 const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // Default to 'en' if not set
 
@@ -47,7 +56,38 @@ const translations = {
       "থাকান",
       "বুকে ব্যথা"
     ]
-  }
+  },
+  Tamil: {
+    title: "உங்கள் அறிகுறிகளைப் பதிவு செய்யுங்கள்",
+    startRecording: "பதிவு செய்யத் தொடங்கு",
+    stopRecording: "பதிவு செய்வதை நிறுத்து",
+    submit: "அறிகுறிகளைச் சமர்ப்பிக்கவும்",
+    audioTitle: "உங்கள் குரலைப் பதிவு செய்யுங்கள்:",
+    otherSymptomsLabel: "பிற அறிகுறிகளை விவரிக்கவும்:",
+    symptoms: [
+        "தலைவலி",
+        "காய்ச்சல்",
+        "இருமல்",
+        "சோர்வு",
+        "நெஞ்சு வலி"
+    ]
+  },
+  Odia:{
+    title: "ଆପଣଙ୍କ ଲକ୍ଷଣ ରେକର୍ଡ କରନ୍ତୁ",
+    startRecording: "ରେକର୍ଡିଂ ଆରମ୍ଭ କରନ୍ତୁ",
+    stopRecording: "ରେକର୍ଡିଂ ବନ୍ଦ କରନ୍ତୁ",
+    submit: "ଲକ୍ଷଣ ଦାଖଲ କରନ୍ତୁ",
+    audioTitle: "ଆପଣଙ୍କ ସ୍ୱର ରେକର୍ଡ କରନ୍ତୁ:",
+    otherSymptomsLabel: "ଅନ୍ୟ ଲକ୍ଷଣ ବର୍ଣ୍ଣନା କରନ୍ତୁ:",
+    symptoms: [
+        "ମୁଣ୍ଡବିନ୍ଧା",
+        "ଜ୍ୱର",
+        "କାଶ",
+        "କ୍ଳାନ୍ତି",
+        "ଛାତି ଯନ୍ତ୍ରଣା"
+    ]
+}
+
 };
 
 // Set the page text based on selected language

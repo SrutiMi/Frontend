@@ -55,6 +55,12 @@ if (selectedLanguage) {
     document.getElementById('verify-btn').textContent = "জমা দিন";
     document.getElementById('home-btn').textContent = "আবার শুরু করুন";
     document.getElementById('error-message').textContent = "ভুল OTP। আবার চেষ্টা করুন।";
+  } else if (selectedLanguage === "Odia") {
+    document.getElementById('otp-title').textContent = "OTP ஐ உள்ளிடவும்";
+    document.getElementById('otp-description').textContent = "பதிவுசெய்யப்பட்ட மொபைல் எண்ணுக்கு இப்போதுதான் OTP அனுப்பினோம்.";
+    document.getElementById('verify-btn').textContent = "சமர்ப்பிக்க";
+    document.getElementById('home-btn').textContent = "மீண்டும் தொடங்க";
+    document.getElementById('error-message').textContent = "தவறான OTP. மீண்டும் முயற்சிக்கவும்.";
   }
-  // Add other language translations similarly
+  
 }
